@@ -1,3 +1,9 @@
-/*#show-ticket {
+#show-ticket {
   display: none;
-}*/
+  border: 2px solid green;
+  border-radius: 20px;
+  background-color: #e0eddc;
+  padding: 30px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 20px;
+}

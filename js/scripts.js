@@ -18,6 +18,8 @@ Movie.prototype.ticket = function() {
   return "$" + (this.quantity * price);
 }
 
+
+
 // user interface logic
 $(document).ready(function() {
   $("#add-tickets").click(function() {
@@ -36,9 +38,10 @@ debugger;
     var total = newTicket.ticket();
 
     $("#show-ticket").show();
-    $(".movie-name").append(selectedName);
-    $(".movie-time").append(selectedTime);
-    $(".quantity").append(selectedQty);
-    $(".total").append(total);
+    $(".movie-name").text(selectedName);
+    $(".movie-time").text(selectedTime);
+    $(".quantity").text(selectedQty);
+    $(".total").text(total);
   });
+
 });
